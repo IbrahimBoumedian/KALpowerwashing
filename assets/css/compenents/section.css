@@ -1,0 +1,41 @@
+.section-pad {
+  padding-block: 160px !important;
+}
+
+/* Background with shadow  */
+.shadow-section {
+  position: relative !important;
+  overflow: hidden;
+  z-index: 10 !important;
+}
+.shadow-section > .container , .shadow-section .containerFluid , .shadow-section .container  {
+  position: relative !important;
+  z-index: 9999;
+}
+.shadow-section .shadow-bg {
+  position: absolute;
+  z-index: -2;
+  max-width: 100%;
+  opacity: 0.5;
+  max-height: 100%;
+  animation: fade 3s ease-in-out infinite alternate;
+  opacity: 0.5;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: .1;
+  
+  }
+}
+
+.shadow-bg.right-dir {
+  right: -37% !important;
+  top: 0 !important;
+}
+.shadow-bg.left-dir {
+  left: -37% !important;
+  bottom: 0 !important;
+}
